@@ -6,7 +6,6 @@
 .hero-heading {
   color: white;
   font-size: 2rem;
-  /* text-align: center; */
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -30,16 +29,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  /* background-color: #00264d; */
 }
 
 .search-item {
-  flex: 2; /* Further increase width of each item */
+  flex: 2;
 }
 
 .search-item label {
   font-size: 12px;
-  color: gray;
   color: white;
   display: block;
   margin-bottom: 3px;
@@ -47,18 +44,17 @@
 
 .search-item .form-control {
   width: 100%;
-  padding: 20px; /* Adjust padding to ensure placeholder fits */
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 14px; /* Adjust font size for better visibility */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .search-item .checkbox-label {
-  margin-top: 5px; /* Add spacing between the input field and the checkbox */
+  margin-top: 5px;
   font-size: 14px;
   color: gray;
-  
   display: block;
 }
 
@@ -74,7 +70,7 @@
   background-color: #007bff;
   color: white;
   border: none;
-  padding:20px;
+  padding: 20px;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;
@@ -82,59 +78,59 @@
 
 .checkboxes {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for checkboxes */
+  flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   font-weight: bold;
 }
 
 .checkboxes label {
-  width: 48%; /* Ensure two checkboxes fit in one row */
+  width: 48%;
   color: white;
   font-size: 14px;
   display: flex;
-  align-items: center; /* Align checkbox and label text */
-  gap: 5px; /* Add spacing between checkbox and label text */
+  align-items: center;
+  gap: 5px;
 }
 
 .checkboxes label:nth-child(2) {
-  width: 100%; /* Place the second checkbox below the second input field */
+  width: 100%;
   margin-left: 0;
 }
 
 .checkboxes label:nth-child(3) {
-  width: 100%; /* Place the third checkbox below the first row */
-  margin-left: 0; /* Align it directly below the first checkbox */
+  width: 100%;
+  margin-left: 0;
 }
 
 @media (max-width: 992px) {
   .search-container {
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
     gap: 15px;
   }
 
   .search-item {
-    flex: 1 1 100%; /* Full width for each item */
-    width: 100%; /* Full width for each item */
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .exchange-btn {
-    margin: 0 auto; /* Center the exchange button */
+    margin: 0 auto;
   }
 
   .search-btn {
-    width: 100%; /* Full width for the search button */
+    width: 100%;
   }
 
   .checkboxes {
-    flex-wrap: wrap; /* Allow checkboxes to wrap */
+    flex-wrap: wrap;
     gap: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-heading {
-    font-size: 20px; /* Adjust heading size */
+    font-size: 20px;
     text-align: center;
   }
 
@@ -143,35 +139,35 @@
   }
 
   .search-container {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: stretch;
   }
 
   .search-item {
-    width: 100%; /* Full width for each item */
+    width: 100%;
   }
 
   .checkboxes {
-    flex-direction: column; /* Stack checkboxes vertically */
+    flex-direction: column;
     align-items: flex-start;
   }
 }
 
 @media (max-width: 576px) {
   .hero-section {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
 
   .search-container {
-    gap: 10px; /* Reduce gap between items */
+    gap: 10px;
   }
 
   .search-btn {
-    font-size: 14px; /* Adjust button font size */
-    padding: 10px; /* Reduce padding */
+    font-size: 14px;
+    padding: 10px;
   }
 
   .checkboxes label {
-    font-size: 12px; /* Adjust font size for checkboxes */
+    font-size: 12px;
   }
 }

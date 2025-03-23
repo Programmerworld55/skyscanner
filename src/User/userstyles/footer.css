@@ -29,7 +29,7 @@
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Add spacing between icon and text */
+  gap: 10px;
 }
 
 .location-icon {
@@ -37,9 +37,9 @@
 }
 
 .get-app {
-  display: none; /* Hide by default */
+  display: none;
   align-items: center;
-  gap: 10px; /* Add spacing between icon and text */
+  gap: 10px;
   margin-top: 10px;
   justify-content: center;
 }
@@ -57,7 +57,7 @@
 .footer-links {
   display: flex;
   flex: 1 1 100%;
-  justify-content: center; /* Center the columns horizontally */
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -65,7 +65,7 @@
 .footer-column {
   flex: 1;
   min-width: 150px;
-  text-align: center; /* Center text inside each column */
+  text-align: center;
 }
 
 .footer-column:first-child {
@@ -93,7 +93,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  gap: 5px; /* Reduce gap between "Explore" and the arrow */
+  gap: 5px;
 }
 
 .explore-arrow {
@@ -130,18 +130,18 @@
 }
 
 .collapsible-arrow {
-  font-size: 16px; /* Adjust size for a cleaner look */
-  transition: transform 0.3s ease; /* Smooth transition for rotation */
-  color: #000; /* Black color for the arrow */
-  display: inline-block; /* Ensure proper alignment */
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  color: #000;
+  display: inline-block;
 }
 
 .collapsible-header:hover .collapsible-arrow {
-  color: #000; /* Keep arrow black on hover */
+  color: #000;
 }
 
 .collapsible-section.active .collapsible-arrow {
-  transform: rotate(180deg); /* Rotate arrow when active */
+  transform: rotate(180deg);
 }
 
 .collapsible-links {
@@ -206,6 +206,6 @@
   }
 
   .get-app {
-    display: flex; /* Show only on small devices */
+    display: flex;
   }
 }
