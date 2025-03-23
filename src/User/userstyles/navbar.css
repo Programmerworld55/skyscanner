@@ -1,0 +1,283 @@
+@import './variables.css';
+
+.bg-dark-skyscanner {
+  background-color: #05203c !important; /* Ensure consistent background color */
+  width: 100%; /* Full width */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.logo {
+  height: 30px;
+  background-color: #051b29;
+}
+
+/* Adjust navbar container */
+.navbar-container {
+  width: 100%; /* Full width */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  gap: 15px; /* Add spacing between icons */
+ 
+}
+
+.nav-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* background-color: #004060; */
+}
+
+.nav-icon:hover {
+  color: #ccc;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust size for the profile icon */
+  color: #fff;
+}
+
+.btn-outline-light {
+  /* color: #fff; */
+  border: none;
+  padding-left: 10px;
+}
+
+.login-text {
+  display: none; /* Hide login text */
+}
+
+.below-navbar {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  align-items: center;
+  gap: 20px; /* Add spacing between tabs */
+  padding: 10px 0; /* Add padding for better spacing */
+  margin: 0; /* Remove any default margin */
+  background-color: #05203c; /* Match the navbar background color */
+  border-bottom: 1px solid #ccc;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.below-navbar .below-nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text and icons */
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: #05203c; /* Match background color */
+  margin: 0; /* Remove any default margin */
+}
+
+.below-nav-link:hover {
+  color: #ccc;
+  background-color: #004060;
+  border-color: #fff;
+}
+
+.below-nav-link.active {
+  color: #fff;
+  background-color: #093968;
+  border-color: #fff;
+  border-radius: 20px;
+}
+
+.logo-container {
+  background-color: #051b29;
+  padding: 10px 0;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Change to relative for proper stacking */
+  display: block; /* Ensure it spans the full width */
+  text-align: center; /* Center align the logo */
+  margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+.logo-text:hover {
+  color: #ccc;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #05203c; /* Match the navbar background color */
+  color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.sidebar-link:hover {
+  color: #ccc;
+}
+
+.sidebar-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-icons {
+    position: absolute;
+    right: 60px;
+    top: 15px;
+  }
+
+  .below-nav-link {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .logo-text {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    margin-bottom: 15px; /* Add spacing below the logo */
+  }
+
+  .navbar-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .below-navbar {
+    flex-direction: column; /* Stack tabs vertically on small devices */
+    align-items: center;
+    gap: 10px; /* Reduce gap for smaller screens */
+    margin-top: 0; /* Remove any additional margin */
+    width: 100%; /* Ensure full width */
+  }
+
+  .below-nav-link {
+    width: 100%; /* Full width for links */
+    text-align: center;
+    margin: 5px 0; /* Add spacing between links */
+  }
+}
+
+/* Ensure the navbar and tabs are properly aligned */
+.navbar-container {
+  width: 100%; /* Full width */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.navbar {
+  margin-bottom: 0; /* Remove any default margin below the navbar */
+}
+
+/* Adjust spacing for large screens */
+@media (min-width: 992px) {
+  .navbar {
+    margin-bottom: 0; /* Ensure no gap between navbar and tabs */
+  }
+
+  .below-navbar {
+    margin-top: 0; /* Remove any additional margin */
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color:white;
+  color:black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center;
+  gap: 10px; /* Add spacing between icon and text */
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #004060;
+  color: #ccc;
+}
+
+.dropdown-icon {
+  font-size: 16px; /* Adjust icon size */
+  color: #007bff; /* Icon color */
+}

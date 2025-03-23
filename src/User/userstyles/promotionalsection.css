@@ -1,0 +1,127 @@
+.promo-section {
+    /* background: url("../../assets/wmremove-transformed.jpeg") center/cover no-repeat; */
+    background: url("../../assets/wmremove-transformed.jpeg") center/cover no-repeat;
+
+    padding: 80px 0; /* Removed extra padding on left and right */
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the content inside */
+    align-items: center;
+    width: 100%; /* Ensure full width within the max-width */
+    /* margin-left: 130px; */
+    border-radius: 12px;
+    padding-right: 0;
+    margin-right: 0;
+    max-width: 1250px; /* Reduced max-width slightly to match category-buttons */
+    margin: 0 auto; /* Center the section */
+}
+
+.promo-outer-container {
+    width: 100%;
+    padding: 0; /* Removed padding from left and right */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.promo-container {
+    max-width: 100%; /* Ensure it fits within the outer container */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensures text stays on the left */
+}
+
+.promo-content {
+    background: transparent;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 50%; /* Restricts text width */
+}
+
+.promo-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.promo-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promo-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color:white;
+    color:black;
+    transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+    background-color: #0052cc;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+  .promo-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+    padding-right: 0; /* Remove extra padding */
+  }
+
+  .promo-content {
+    max-width: 90%; /* Increase text width for better readability */
+    text-align: center; /* Center align text */
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-section {
+    padding: 50px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .promo-content {
+    max-width: 100%; /* Use full width for text */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .promo-title {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .promo-subtitle {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .promo-btn {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .promo-section {
+    padding: 40px 10px; /* Further reduce padding for smaller screens */
+  }
+
+  .promo-content {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .promo-title {
+    font-size: 1.5rem; /* Further adjust font size */
+  }
+
+  .promo-subtitle {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .promo-btn {
+    font-size: 0.8rem; /* Further adjust button font size */
+    padding: 8px 16px; /* Further adjust button padding */
+  }
+}

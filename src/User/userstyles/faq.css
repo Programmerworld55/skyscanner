@@ -1,0 +1,128 @@
+.faq-section {
+  max-width: 1250px; /* Match width with promotional section */
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+.faq-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 10px 15px; /* Reduced padding for smaller height */
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid #e0e0e0; /* Add bottom border only */
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Stack question and answer vertically */
+}
+
+.faq-item:hover {
+  background: #f8f9fa;
+  border-bottom-color: #d6d6d6; /* Change bottom border color on hover */
+}
+
+.faq-question {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  font-size: 15px;
+  margin-top: 8px; /* Add spacing between question and answer */
+  display: none; /* Hide answer by default */
+  line-height: 1.6; /* Improve readability */
+  color: #555; /* Subtle text color for the answer */
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Show answer when active */
+}
+
+.faq-arrow {
+  font-size: 16px; /* Adjust size for a cleaner look */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+  color: #000; /* Black color for the arrow */
+  display: inline-block; /* Ensure proper alignment */
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+@media (max-width: 992px) {
+  .faq-container {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .faq-column {
+    min-width: 100%; /* Full width for medium screens */
+  }
+
+  .faq-item {
+    padding: 8px 12px; /* Adjust padding for medium screens */
+  }
+
+  .faq-question {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .faq-answer {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 30px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .faq-item {
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .faq-question {
+    font-size: 15px; /* Adjust font size */
+  }
+
+  .faq-answer {
+    font-size: 13px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-section {
+    padding: 20px 10px; /* Further reduce padding for smaller screens */
+  }
+
+  .faq-item {
+    padding: 5px 8px; /* Further adjust padding */
+  }
+
+  .faq-question {
+    font-size: 14px; /* Further adjust font size */
+  }
+
+  .faq-answer {
+    font-size: 12px; /* Further adjust font size */
+  }
+}
